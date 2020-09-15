@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WOTLA_ScrollTest1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js'></script>
+    <script src='https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js'></script>
+    <script src='https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js'></script>
+    
+    </head>
+
+<body>
+    <div class="bottom"><img class="img2" src="images/down-arrow.png"></div>
+    <lottie-player id="firstLottie" src="https://dl.dropbox.com/s/58li18ajbwepk83/idea_one_header.json">    </lottie-player>
+    <div class="bottom2"></div>
+    <div class="site"><img class="img" src="/images/Idea1_site.jpg"></div>
+    <script>
+        LottieInteractivity.create({
+            mode: "scroll"
+            , player: "#firstLottie"
+            , actions: [
+                {
+                    visibility: [0, 1]
+                    , type: "seek"
+                    , frames: [0, 104]
+    }
+  ]
+        });
+    </script>
+
+</body>
+
+</html>
