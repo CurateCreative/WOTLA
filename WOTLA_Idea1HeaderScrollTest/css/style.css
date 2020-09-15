@@ -3,16 +3,16 @@ body{
 }
 
 #firstLottie{
-    background-color: #1F1F1F;
+    background-color: black;
 }
 
 .bottom{
-  background-color: #1F1F1F;
+  background-color: black;
   height: 100vh;
 }
 
 .bottom2{
-  background-color: #1F1F1F;
+  background-color: black;
   height: 30vh;
 }
 
@@ -27,9 +27,27 @@ body{
 
 
 .img2{
-    width: 2%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-    padding-top: 30%;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    width: 2.3%;
+
+}
+
+.quote {
+       margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 12px;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: 200;
+    color: white;
 }
